@@ -1,0 +1,36 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <PlatformTarget>x64</PlatformTarget>
+    <Platform>x64</Platform>
+    <IsPublishable>False</IsPublishable>
+    <ProduceReferenceAssembly>False</ProduceReferenceAssembly>
+    <AutoGenerateBindingRedirects>False</AutoGenerateBindingRedirects>
+    <GenerateDocumentationFile>False</GenerateDocumentationFile>
+    <EnforceCodeStyleInBuild>False</EnforceCodeStyleInBuild>
+    <EnableNETAnalyzers>True</EnableNETAnalyzers>
+    <AnalysisLevel>latest-all</AnalysisLevel>
+    <Platforms>AnyCPU;x64</Platforms>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <DebugType>portable</DebugType>
+    <WarningLevel>7</WarningLevel>
+    <NoWarn>1701;1702;NU1702</NoWarn>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <DebugType>portable</DebugType>
+    <WarningLevel>7</WarningLevel>
+    <NoWarn>1701;1702;NU1702</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\NamedPipes.csproj" />
+  </ItemGroup>
+
+</Project>

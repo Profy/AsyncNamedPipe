@@ -1,0 +1,38 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <RuntimeIdentifiers>win10-x64;ubuntu.20.04-x64</RuntimeIdentifiers>
+    <PlatformTarget>x64</PlatformTarget>
+    <Platform>x64</Platform>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <IsPublishable>True</IsPublishable>
+    <ProduceReferenceAssembly>False</ProduceReferenceAssembly>
+    <AutoGenerateBindingRedirects>False</AutoGenerateBindingRedirects>
+    <GenerateDocumentationFile>False</GenerateDocumentationFile>
+    <Authors>XXII</Authors>
+    <Company>XXII</Company>
+    <EnforceCodeStyleInBuild>False</EnforceCodeStyleInBuild>
+    <EnableNETAnalyzers>True</EnableNETAnalyzers>
+    <AnalysisLevel>latest-all</AnalysisLevel>
+    <Nullable>disable</Nullable>
+    <Platforms>AnyCPU;x64</Platforms>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <DebugType>portable</DebugType>
+    <WarningLevel>4</WarningLevel>
+    <DefineConstants>$(DefineConstants)</DefineConstants>
+    <NoWarn />
+    <WarningsAsErrors />
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <DebugType>none</DebugType>
+    <WarningLevel>4</WarningLevel>
+    <DefineConstants />
+    <NoWarn />
+    <WarningsAsErrors />
+  </PropertyGroup>
+
+</Project>
